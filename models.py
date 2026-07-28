@@ -1,12 +1,8 @@
 from typing import List, Optional
-
 from pydantic import BaseModel
 
 
-# =========================
 # REQUEST
-# =========================
-
 class Trabajo(BaseModel):
 
     region: str
@@ -25,11 +21,7 @@ class RenderRequest(BaseModel):
     trabajos: List[Trabajo]
 
 
-
-# =========================
 # RESPONSE
-# =========================
-
 class Imagen(BaseModel):
 
     sitio: str
@@ -38,12 +30,10 @@ class Imagen(BaseModel):
     imagen: Optional[str] = None
 
 
-
 class Region(BaseModel):
 
     region: str
     imagenes: List[Imagen]
-
 
 
 class RenderResponse(BaseModel):
