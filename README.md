@@ -35,6 +35,8 @@ uvicorn app:app --reload
 
 GET /
 
+GET /docs
+
 GET /health
 
 POST /render
