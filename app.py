@@ -7,7 +7,7 @@ from service import RenderService
 app = FastAPI(
     title="HTML Render Service",
     version="1.0.0",
-    description="Microservicio para convertir HTML en imágenes PNG mediante Playwright."
+    description="Microservicio para convertir HTML en imagenes PNG mediante Playwright."
 )
 
 
